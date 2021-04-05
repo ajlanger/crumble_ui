@@ -1,0 +1,26 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-crumbleui-dev-195928-authRole",
+            "UnauthRoleArn": "arn:aws:iam::072961582373:role/amplify-crumbleui-dev-195928-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::072961582373:role/amplify-crumbleui-dev-195928-authRole",
+            "Region": "eu-central-1",
+            "DeploymentBucketName": "amplify-crumbleui-dev-195928-deployment",
+            "UnauthRoleName": "amplify-crumbleui-dev-195928-unauthRole",
+            "StackName": "amplify-crumbleui-dev-195928",
+            "StackId": "arn:aws:cloudformation:eu-central-1:072961582373:stack/amplify-crumbleui-dev-195928/ad41ee40-9181-11eb-b133-0a3a1e3a96f0",
+            "AmplifyAppId": "drntvqiw8x33i"
+        },
+        "categories": {
+            "auth": {
+                "crumbleui5ec120d8": {}
+            },
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "drntvqiw8x33i",
+                    "type": "cicd"
+                }
+            }
+        }
+    }
+}

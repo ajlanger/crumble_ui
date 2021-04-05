@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+/* src/App.js */
+// import React, { useEffect, useState } from 'react'
+// import Amplify, { API, graphqlOperation } from 'aws-amplify'
+import Amplify from 'aws-amplify';
+import { withAuthenticator } from '@aws-amplify/ui-react'
+// import { createUserinfo } from './graphql/mutations'
+// import { listUserinfos } from './graphql/queries'
 
-function App() {
+import awsExports from "./aws-exports";
+Amplify.configure(awsExports);
+
+// const initialState = { username: '', email: '', krakenusername: '', krakenapikey: '' }
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={styles.container}>
+      <h2>An amazing app will be developed right here.</h2>
     </div>
-  );
+  )
 }
 
-export default App;
+const styles = {
+  container: { width: 400, margin: '0 auto', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: 20 },
+  todo: {  marginBottom: 15 },
+  input: { border: 'none', backgroundColor: '#ddd', marginBottom: 10, padding: 8, fontSize: 18 },
+  todoName: { fontSize: 20, fontWeight: 'bold' },
+  todoDescription: { marginBottom: 0 },
+  button: { backgroundColor: 'black', color: 'white', outline: 'none', fontSize: 18, padding: '12px 0px' }
+}
+
+export default withAuthenticator(App)
