@@ -5,12 +5,12 @@ export const getUserinfo = /* GraphQL */ `
   query GetUserinfo($id: ID!) {
     getUserinfo(id: $id) {
       id
-      username
-      email
       krakenusername
       krakenapikey
+      cryptocoins
       createdAt
       updatedAt
+      owner
     }
   }
 `;
@@ -23,12 +23,12 @@ export const listUserinfos = /* GraphQL */ `
     listUserinfos(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
-        username
-        email
         krakenusername
         krakenapikey
+        cryptocoins
         createdAt
         updatedAt
+        owner
       }
       nextToken
     }

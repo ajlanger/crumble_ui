@@ -8,12 +8,12 @@ export const createUserinfo = /* GraphQL */ `
   ) {
     createUserinfo(input: $input, condition: $condition) {
       id
-      username
-      email
       krakenusername
       krakenapikey
+      cryptocoins
       createdAt
       updatedAt
+      owner
     }
   }
 `;
@@ -24,12 +24,12 @@ export const updateUserinfo = /* GraphQL */ `
   ) {
     updateUserinfo(input: $input, condition: $condition) {
       id
-      username
-      email
       krakenusername
       krakenapikey
+      cryptocoins
       createdAt
       updatedAt
+      owner
     }
   }
 `;
@@ -40,12 +40,12 @@ export const deleteUserinfo = /* GraphQL */ `
   ) {
     deleteUserinfo(input: $input, condition: $condition) {
       id
-      username
-      email
       krakenusername
       krakenapikey
+      cryptocoins
       createdAt
       updatedAt
+      owner
     }
   }
 `;

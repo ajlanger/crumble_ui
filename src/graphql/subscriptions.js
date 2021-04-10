@@ -5,12 +5,12 @@ export const onCreateUserinfo = /* GraphQL */ `
   subscription OnCreateUserinfo {
     onCreateUserinfo {
       id
-      username
-      email
       krakenusername
       krakenapikey
+      cryptocoins
       createdAt
       updatedAt
+      owner
     }
   }
 `;
@@ -18,12 +18,12 @@ export const onUpdateUserinfo = /* GraphQL */ `
   subscription OnUpdateUserinfo {
     onUpdateUserinfo {
       id
-      username
-      email
       krakenusername
       krakenapikey
+      cryptocoins
       createdAt
       updatedAt
+      owner
     }
   }
 `;
@@ -31,12 +31,12 @@ export const onDeleteUserinfo = /* GraphQL */ `
   subscription OnDeleteUserinfo {
     onDeleteUserinfo {
       id
-      username
-      email
       krakenusername
       krakenapikey
+      cryptocoins
       createdAt
       updatedAt
+      owner
     }
   }
 `;
